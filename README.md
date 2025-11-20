@@ -1,73 +1,102 @@
-# React + TypeScript + Vite
+# User Manager App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React-based User Management Application that allows you to:
 
-Currently, two official plugins are available:
+* Fetch and display user data
+* Search users by name or email
+* Add new users (Name, Email, Phone, Company)
+* Edit existing users
+* Delete users
+* Use modal popups for creating and editing users
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### ✔ Display Users
 
-## Expanding the ESLint configuration
+Users are listed in a table with Name, Email, Phone, Company, and actions.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### ✔ Search Functionality
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Search bar filters users based on name or email.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### ✔ Add User
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Add new users through a modal form with input fields for:
+
+* Name
+* Email
+* Phone
+* Company
+
+### ✔ Edit User
+
+Update an existing user's details through a modal.
+
+### ✔ Delete User
+
+Remove a user from the list with a confirmation dialog.
+
+---
+
+## 🛠 Tech Stack
+
+* React (TypeScript)
+* CSS for styling
+* Dummy API call using custom fetch function
+
+---
+
+## 📁 Project Structure
+
+```
+src
+│
+├── api
+│   └── users.ts
+│
+├── components
+│   ├── Modal.tsx
+│   ├── AddUserForm.tsx
+│   └── EditUserForm.tsx
+│
+├── App.tsx
+└── App.css
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ▶ Running the Project
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Install dependencies:
+
 ```
+npm install
+```
+
+Start the development server:
+
+```
+npm run dev
+```
+
+---
+
+## 📦 Build for Production
+
+```
+npm run build
+```
+
+---
+
+## 🧑‍💻 Author
+
+Built for learning and demonstration purposes.
+
+---
+
+## ⭐ Contribute
+
+Feel free to fork, clone, and submit pull requests.
