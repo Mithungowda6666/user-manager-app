@@ -11,17 +11,17 @@ A simple React-based User Management Application that allows you to:
 
 ---
 
-## 🚀 Features
+##  Features
 
-### ✔ Display Users
+###  Display Users
 
 Users are listed in a table with Name, Email, Phone, Company, and actions.
 
-### ✔ Search Functionality
+###  Search Functionality
 
 Search bar filters users based on name or email.
 
-### ✔ Add User
+###  Add User
 
 Add new users through a modal form with input fields for:
 
@@ -30,17 +30,17 @@ Add new users through a modal form with input fields for:
 * Phone
 * Company
 
-### ✔ Edit User
+###  Edit User
 
 Update an existing user's details through a modal.
 
-### ✔ Delete User
+###  Delete User
 
 Remove a user from the list with a confirmation dialog.
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 * React (TypeScript)
 * CSS for styling
@@ -48,7 +48,7 @@ Remove a user from the list with a confirmation dialog.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 src
@@ -67,7 +67,7 @@ src
 
 ---
 
-## ▶ Running the Project
+##  Running the Project
 
 Install dependencies:
 
@@ -83,20 +83,10 @@ npm run dev
 
 ---
 
-## 📦 Build for Production
+##  Build for Production
 
 ```
 npm run build
 ```
 
----
 
-## 🧑‍💻 Author
-
-Built for learning and demonstration purposes.
-
----
-
-## ⭐ Contribute
-
-Feel free to fork, clone, and submit pull requests.
